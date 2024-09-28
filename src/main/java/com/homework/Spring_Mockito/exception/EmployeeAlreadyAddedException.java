@@ -1,15 +1,15 @@
-  package com.homework.Spring_Mockito.exception;
+    package com.homework.Spring_Mockito.exception;
 
-  import org.springframework.http.HttpStatus;
-  import org.springframework.web.bind.annotation.ResponseStatus;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.web.bind.annotation.ResponseStatus;
 
-  @ResponseStatus(HttpStatus.BAD_REQUEST)
-  public class EmployeeAlreadyAddedException extends RuntimeException {
-      public EmployeeAlreadyAddedException() {
-          super("Сотрудник уже добавлен");
-      }
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public class EmployeeAlreadyAddedException extends RuntimeException {
+        public EmployeeAlreadyAddedException() {
+            super("Сотрудник уже добавлен");
+        }
 
-      public EmployeeAlreadyAddedException(String message) {
-          super(message);
-      }
-  }
+        public EmployeeAlreadyAddedException(String message) {
+            super(message);
+        }
+    }
